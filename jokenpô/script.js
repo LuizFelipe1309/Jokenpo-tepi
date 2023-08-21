@@ -1,37 +1,35 @@
 /* ramdomizar a escolha do bot */
-function Play(){
-    if(document.getElementById("r1").checked == false && document.getElementById("r2").checked == false && document.getElementById("r3").checked == false){
+function Play() {
+    if (document.getElementById("r1").checked == false && document.getElementById("r2").checked == false && document.getElementById("r3").checked == false) {
         alert("SELECIONE UMA OPÇÃO");
-    } else{
+    } else {
         document.getElementById("r1").checked = false;
         document.getElementById("r2").checked = false;
         document.getElementById("r3").checked = false;
-        var randomizer = Math.floor (Math.random() * 3);
-        switch(randomizer){
+        var randomizer = Math.floor(Math.random() * 3);
+        switch (randomizer) {
             case 0:
-                document.getElementById("choice-bot").src ="img/papel.png";
+                document.getElementById("choice-bot").src = "img/papel.png";
                 break;
             case 1:
-                document.getElementById("choice-bot").src ="img/pedra.png";
+                document.getElementById("choice-bot").src = "img/pedra.png";
                 break;
             case 2:
-                document.getElementById("choice-bot").src ="img/tesoura.png";
+                document.getElementById("choice-bot").src = "img/tesoura.png";
                 break;
         }
-        if((document.getElementById("r1").checked == true && randomizer == 0) ||
-        (document.getElementById("r2").checked == true && randomizer == 1) ||
-        (document.getElementById("r3").checked == true && randomizer == 2)){
-            document.getElementById("result").innerHTML ="EMPATE";
-        } 
-        else if((document.getElementById("r1").checked == true && randomizer == 2) ||
-        (document.getElementById("r2").checked == true && randomizer == 0) ||
-        (document.getElementById("r3").checked == true && randomizer == 1)){
-            document.getElementById("result").innerHTML ="PONTO DO BOT";
-        } 
-        else((document.getElementById("r1").checked == true && randomizer == 1) ||
-        (document.getElementById("r2").checked == true && randomizer == 2) ||
-        (document.getElementById("r3").checked == true && randomizer == 0));{
-            document.getElementById("result").innerHTML ="PONTO DO PLAYER";
+        if ((document.getElementById("r1").checked == true && randomizer == 0) ||
+            (document.getElementById("r2").checked == true && randomizer == 1) ||
+            (document.getElementById("r3").checked == true && randomizer == 2)) {
+            document.getElementById("Won").innerHTML = "EMPATE";
+        }
+        else if ((document.getElementById("r1").checked == true && randomizer == 2) ||
+            (document.getElementById("r2").checked == true && randomizer == 0) ||
+            (document.getElementById("r3").checked == true && randomizer == 1)) {
+            document.getElementById("Won").innerHTML = "PONTO DO BOT";
+        }
+        else {
+            document.getElementById("Won").innerHTML = "PONTO DO PLAYER"
         }
     }
 }
