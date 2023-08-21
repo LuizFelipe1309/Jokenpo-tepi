@@ -9,13 +9,13 @@ function Play() {
         var randomizer = Math.floor(Math.random() * 3);
         switch (randomizer) {
             case 0:
-                document.getElementById("choice-bot").src = "img/papel.png";
+                document.getElementById("choice-bot").src = "img/SPFC.png";
                 break;
             case 1:
-                document.getElementById("choice-bot").src = "img/pedra.png";
+                document.getElementById("choice-bot").src = "img/SEP.png";
                 break;
             case 2:
-                document.getElementById("choice-bot").src = "img/tesoura.png";
+                document.getElementById("choice-bot").src = "img/SCCP.png";
                 break;
         }
         if ((document.getElementById("r1").checked == true && randomizer == 0) ||
@@ -23,23 +23,25 @@ function Play() {
             (document.getElementById("r3").checked == true && randomizer == 2)) {
             document.getElementById("Won").innerHTML = "EMPATE";
         }
-        else if ((document.getElementById("r1").checked == true && randomizer == 2) ||
+        if ((document.getElementById("r1").checked == true && randomizer == 2) ||
             (document.getElementById("r2").checked == true && randomizer == 0) ||
             (document.getElementById("r3").checked == true && randomizer == 1)) {
             document.getElementById("Won").innerHTML = "PONTO DO BOT";
         }
-        else {
-            document.getElementById("Won").innerHTML = "PONTO DO PLAYER"
+        if ((document.getElementById("r1").checked == true && randomizer == 1) ||
+            (document.getElementById("r2").checked == true && randomizer == 2) ||
+            (document.getElementById("r3").checked == true && randomizer == 0)) {
+            document.getElementById("Won").innerHTML = "PONTO DO PLAYER";
         }
     }
 }
-/*
-function choice(){
-    if(document.getElementById("r1").checked == true){
-        document.getElementById("choice-player").src = "img/papel.png";
-    } else if(document.getElementById("r2").checked == true){
-        document.getElementById("choice-player").src = "img/pedra.png";
-    } else(document.getElementById("r3").checked == true);{
-        document.getElementById("choice-player").src = "img/tesoura.png"; 
+
+function choice() {
+    if (document.getElementById("r1").checked == true) {
+        document.getElementById("choice-player").src = "img/SPFC.png";
+    } if (document.getElementById("r2").checked == true) {
+        document.getElementById("choice-player").src = "img/SEP.png";
+    } if (document.getElementById("r3").checked == true) {
+        document.getElementById("choice-player").src = "img/SCCP.png";
     }
-}*/
+}

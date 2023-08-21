@@ -13,22 +13,22 @@
 </head>
 <body class="body">
     
-    <h1 class="main">Pedra / papel / tesoura</h1><hr>
+    <h1 class="main">SPFC / SEP / SCCP</h1><hr>
 
     <div class="box">
         <div class="button">
-            <button type="button" class="btn btn-outline-primary" id="bnt1" value="papel" onclick="choice()"><img src="img/papel.png"></button>
-            <button type="button" class="btn btn-outline-success" id="bnt2" value="pedra" onclick="choice()"><img src="img/pedra.png"></button>
-            <button type="button" class="btn btn-outline-danger" id="bnt3" value="tesoura" onclick="choice()"><img src="img/tesoura.png"></button>
+            <button type="button" class="btn btn-outline-primary" id="bnt1" value="papel"><img src="img/SPFC.png"></button>
+            <button type="button" class="btn btn-outline-success" id="bnt2" value="pedra"><img src="img/SEP.png"></button>
+            <button type="button" class="btn btn-outline-danger" id="bnt3" value="tesoura"><img src="img/SCCP.png"></button>
             <button type="button" class="btn btn-primary" id="bnt4" value="Jogar" onclick="Play()">CONFIRMAR</button>
-            <input type="radio" name="group" id="r1">
-            <input type="radio" name="group" id="r2">
-            <input type="radio" name="group" id="r3">
+            <input type="radio" name="group" id="r1" onclick="choice()">
+            <input type="radio" name="group" id="r2" onclick="choice()">
+            <input type="radio" name="group" id="r3"onclick="choice()">
             <h1 id="Won"></h1>
             <h3 id="score"></h3>
             <img src="img/interrogacao.png" id="choice-bot">
             <img src="img/X.png" id="x">
-            <img src="img/papel.png" id="choice-player">
+            <img src="img/SPFC.png" id="choice-player">
         </div>
     </div>
 </body>
