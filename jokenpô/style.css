@@ -1,0 +1,114 @@
+/* general */
+.body{
+    background-color: black; 
+    font-family: 'Common Pixel', sans-serif;
+}
+.main{
+    text-align: center;
+    color: aliceblue;
+    font-size: 75px;
+}
+
+.box{
+    background-color: gray;
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 300px;
+}
+
+
+/* center */
+#choice-player{
+    position: fixed;
+    right: 550px;
+    top: 350px;
+    border-right: 10px solid blue;
+}
+#choice-bot{
+    position: fixed;
+    left: 450px;
+    top: 350px;
+    border-left: 10px solid red ;
+}
+#x{
+    position: fixed;
+    top: 370px;
+    left: 670px;
+}
+#score{
+    text-align: center;
+    position: fixed;
+    top: 225px;
+    left: 680px;
+}
+#result{
+    text-align: center;
+    position: fixed;
+    top: 150px;
+    left: 680px;
+}
+
+
+/* button possition */
+.button{
+    position: absolute
+}
+#bnt1{
+    position: fixed;
+    right: 250px;
+    top: 150px;
+    border-radius: 20%;
+}
+#bnt2{
+    position: fixed;
+    right: 250px;
+    top: 350px;
+    border-radius: 20%;
+}
+#bnt3{
+    position: fixed;
+    right: 250px;
+    top: 550px;
+    border-radius: 20%;
+}
+#bnt4 {
+    position: fixed;
+    right: 115px;
+    top: 400px;
+}
+
+
+/* radio */
+#r1{
+    position: fixed;
+    right: 250px;
+    top: 150px;
+    width: 175px;
+    height: 165px;
+    opacity: 0%;
+    background-color: blue;
+    cursor: pointer;
+}
+
+#r2{
+    position: fixed;
+    right: 250px;
+    top: 350px;
+    width: 175px;
+    height: 165px;
+    opacity: 0%;
+    background-color: green;
+    cursor: pointer;
+}
+
+#r3{
+    position: fixed;
+    right: 250px;
+    top: 550px;
+    width: 175px;
+    height: 165px;
+    opacity: 0%;
+    background-color: red;
+    cursor: pointer;
+}
