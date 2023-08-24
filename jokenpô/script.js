@@ -16,21 +16,19 @@ function Play() {
                 break;
         }
         /* checar o resultado */
-        if ((document.getElementById("r1").checked = "img/SPFC.png" && randomizer == 0) ||
-            (document.getElementById("r2").checked = "img/SEP.png" && randomizer == 1) ||
-            (document.getElementById("r3").checked = "img/SCCP.png" && randomizer == 2)) {
+        if ((document.getElementById("r1").checked == true && randomizer == 0) ||
+            (document.getElementById("r2").checked == true && randomizer == 1) ||
+            (document.getElementById("r3").checked == true && randomizer == 2)) {
             document.getElementById("Won").innerHTML = "EMPATE";
-        }
-        if ((document.getElementById("r1").checked = "img/SPFC.img" && randomizer == 2) ||
-            (document.getElementById("r2").checked = "img/SEP.png" && randomizer == 0) ||
-            (document.getElementById("r3").checked = "img/SCCP.png" && randomizer == 1)) {
+        }else if ((document.getElementById("r1").checked == true && randomizer == 2) ||
+            (document.getElementById("r2").checked == true && randomizer == 0) ||
+            (document.getElementById("r3").checked == true && randomizer == 1)) {
             document.getElementById("Won").innerHTML = "PONTO DO BOT";
-        }
-        if ((document.getElementById("r1").checked = "img/SPFC.img" && randomizer == 1) ||
-            (document.getElementById("r2").checked = "img/SEP.png" && randomizer == 2) ||
-            (document.getElementById("r3").checked = "img/SCCP.png" && randomizer == 0)) {
+        } 
+        else  {
             document.getElementById("Won").innerHTML = "PONTO DO PLAYER";
         }
+
         /* reiniciar a imagem do bot */
         function trocarImagem() {
             var image1 = document.getElementById("choiceP");
@@ -43,23 +41,19 @@ function Play() {
             document.getElementById("Won").innerHTML = "";
         }
         setTimeout(trocarImagem, 2000);
-        function clear() {
-            
-        }
-        setTimeout(clear, 3000);
-
         /* Bloquear a escolha enquanto está sendo comparado*/
-        
+
     }
 }
-
 /* trocar a imagem do player */
 function choice() {
     if (document.getElementById("r1").checked == true) {
         document.getElementById("choiceP").src = "img/SPFC.png";
-    } if (document.getElementById("r2").checked == true) {
+    }
+    if (document.getElementById("r2").checked == true) {
         document.getElementById("choiceP").src = "img/SEP.png";
-    } if (document.getElementById("r3").checked == true) {
+    }
+    if (document.getElementById("r3").checked == true) {
         document.getElementById("choiceP").src = "img/SCCP.png";
     }
 }
