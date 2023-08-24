@@ -1,0 +1,124 @@
+/* general */
+.body{
+    background-color: black; 
+    font-family: 'Common Pixel', sans-serif;
+}
+.main{
+    text-align: center;
+    color: aliceblue;
+    font-size: 75pt;
+}
+
+.box{
+    background-color: gray;
+    margin-top: -1em;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding: 18.5em;
+}
+
+
+/* center */
+#choiceP{
+    position: fixed;
+    right: 32em;
+    top: 21em;
+    border-right: 10px solid blue;
+}
+#choiceB{
+    position: fixed;
+    left: 28em;
+    top: 21em;
+    border-left: 10px solid red ;
+}
+#x{
+    position: fixed;
+    top: 22em;
+    left: 43em;
+}
+#score{
+    text-align: center;
+    position: fixed;
+    top: 14em;
+    left: 42em;
+}
+#Won{
+    text-align: center;
+    position: fixed;
+    top: 4em;
+    left: 13em;
+}
+#rules{
+    font-size: 12pt;
+    position: fixed;
+    left: 6em;
+    top: 10em;
+}
+#rule-img{
+    width: 2em;
+    height: 2em;
+}
+
+
+/* button possition */
+.button{
+    position: absolute
+}
+#bnt1{
+    position: fixed;
+    right: 16em;
+    top: 9em;
+    border-radius: 20%;
+}
+#bnt2{
+    position: fixed;
+    right: 16em;
+    top: 21em;
+    border-radius: 20%;
+}
+#bnt3{
+    position: fixed;
+    right: 16em;
+    top: 33em;
+    border-radius: 20%;
+}
+#bnt4 {
+    position: fixed;
+    right: 7em;
+    top: 25em;
+}
+
+
+/* radio */
+#r1{
+    position: fixed;
+    right: 16em;
+    top: 9em;
+    width: 11em;
+    height: 10em;
+    opacity: 100%;
+    background-color: blue;
+    cursor: pointer;
+}
+
+#r2{
+    position: fixed;
+    right: 16em;
+    top: 21em;
+    width: 11em;
+    height: 10em;
+    opacity: 0%;
+    background-color: green;
+    cursor: pointer;
+}
+
+#r3{
+    position: fixed;
+    right: 16em;
+    top: 33em;
+    width: 11em;
+    height: 10em;
+    opacity: 0%;
+    background-color: red;
+    cursor: pointer;
+}
