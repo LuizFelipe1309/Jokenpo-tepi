@@ -96,7 +96,7 @@
     top: 9em;
     width: 11em;
     height: 10em;
-    opacity: 0%;
+    opacity: 100%;
     background-color: blue;
     cursor: pointer;
 }

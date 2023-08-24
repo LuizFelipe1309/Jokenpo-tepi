@@ -3,9 +3,6 @@ function Play() {
     if (document.getElementById("r1").checked == false && document.getElementById("r2").checked == false && document.getElementById("r3").checked == false) {
         alert("SELECIONE UMA OPÇÃO");
     } else {
-        document.getElementById("r1").checked = false;
-        document.getElementById("r2").checked = false;
-        document.getElementById("r3").checked = false;
         var randomizer = Math.floor(Math.random() * 3);
         switch (randomizer) {
             case 0:
@@ -19,34 +16,37 @@ function Play() {
                 break;
         }
         /* checar o resultado */
-        if ((document.getElementById("choiceP").checked = "img/SPFC.png" && randomizer == 0) ||
-            (document.getElementById("choiceP").checked = "img/SEP.png" && randomizer == 1) ||
-            (document.getElementById("choiceP").checked = "img/SCCP.png" && randomizer == 2)) {
+        if ((document.getElementById("r1").checked = "img/SPFC.png" && randomizer == 0) ||
+            (document.getElementById("r2").checked = "img/SEP.png" && randomizer == 1) ||
+            (document.getElementById("r3").checked = "img/SCCP.png" && randomizer == 2)) {
             document.getElementById("Won").innerHTML = "EMPATE";
         }
-        if ((document.getElementById("choiceP").checked = "img/SPFC.img" && randomizer == 2) ||
-            (document.getElementById("choiceP").checked = "img/SEP.png" && randomizer == 0) ||
-            (document.getElementById("choiceP").checked = "img/SCCP.png" && randomizer == 1)) {
+        if ((document.getElementById("r1").checked = "img/SPFC.img" && randomizer == 2) ||
+            (document.getElementById("r2").checked = "img/SEP.png" && randomizer == 0) ||
+            (document.getElementById("r3").checked = "img/SCCP.png" && randomizer == 1)) {
             document.getElementById("Won").innerHTML = "PONTO DO BOT";
         }
-        if ((document.getElementById("choiceP").checked = "img/SPFC.img" && randomizer == 1) ||
-            (document.getElementById("choiceP").checked = "img/SEP.png" && randomizer == 2) ||
-            (document.getElementById("choiceP").checked = "img/SCCP.png" && randomizer == 0)) {
+        if ((document.getElementById("r1").checked = "img/SPFC.img" && randomizer == 1) ||
+            (document.getElementById("r2").checked = "img/SEP.png" && randomizer == 2) ||
+            (document.getElementById("r3").checked = "img/SCCP.png" && randomizer == 0)) {
             document.getElementById("Won").innerHTML = "PONTO DO PLAYER";
         }
         /* reiniciar a imagem do bot */
         function trocarImagem() {
             var image1 = document.getElementById("choiceP");
             var image2 = document.getElementById("choiceB");
-            var text = document.getElementById("won");
             image1.src = "img/interrogacao.png";
             image2.src = "img/interrogacao.png";
-            text.innerHTML = "";
             document.getElementById("r1").checked = false;
             document.getElementById("r2").checked = false;
             document.getElementById("r3").checked = false;
+            document.getElementById("Won").innerHTML = "";
         }
         setTimeout(trocarImagem, 2000);
+        function clear() {
+            
+        }
+        setTimeout(clear, 3000);
 
         /* Bloquear a escolha enquanto está sendo comparado*/
         
