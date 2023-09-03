@@ -28,8 +28,12 @@ function Play() {
         else  {
             document.getElementById("Won").innerHTML = "PONTO DO PLAYER";
         }
+        //pontuação
+        if (document.getElementById("Won").checked == "EMPATE"){
+            
+        }
 
-        /* reiniciar a imagem do bot */
+        //reiniciar a imagem do bot
         function trocarImagem() {
             var image1 = document.getElementById("choiceP");
             var image2 = document.getElementById("choiceB");
@@ -41,7 +45,7 @@ function Play() {
             document.getElementById("Won").innerHTML = "";
         }
         setTimeout(trocarImagem, 2000);
-        /* Bloquear a escolha enquanto está sendo comparado*/
+        //Bloquear a escolha enquanto está sendo comparado
 
     }
 }
