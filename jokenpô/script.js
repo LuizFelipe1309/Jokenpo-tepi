@@ -1,3 +1,7 @@
+let ScoreB = document.getElementById("ScoreB");
+let ScoreP = document.getElementById("ScoreP");
+ScoreB = 0
+ScoreP = 0
 /* ramdomizar a escolha do bot */
 function Play() {
     if (document.getElementById("r1").checked == false && document.getElementById("r2").checked == false && document.getElementById("r3").checked == false) {
@@ -24,14 +28,15 @@ function Play() {
             (document.getElementById("r2").checked == true && randomizer == 0) ||
             (document.getElementById("r3").checked == true && randomizer == 1)) {
             document.getElementById("Won").innerHTML = "PONTO DO BOT";
+            ScoreB++;
+            document.getElementById("ScoreB").innerHTML = ScoreB;
         } 
         else  {
             document.getElementById("Won").innerHTML = "PONTO DO PLAYER";
+            ScoreP++;
+            document.getElementById("ScoreP").innerHTML = ScoreP;
         }
-        //pontuação
-        if (document.getElementById("Won").checked == "EMPATE"){
-            
-        }
+
 
         //reiniciar a imagem do bot
         function trocarImagem() {
@@ -44,11 +49,11 @@ function Play() {
             document.getElementById("r3").checked = false;
             document.getElementById("Won").innerHTML = "";
         }
-        setTimeout(trocarImagem, 2000);
-        //Bloquear a escolha enquanto está sendo comparado
-
+        setTimeout(trocarImagem, 900);
     }
 }
+
+
 /* trocar a imagem do player */
 function choice() {
     if (document.getElementById("r1").checked == true) {
