@@ -31,14 +31,14 @@
     position: fixed;
     right: 32em;
     top: 21em;
-    border-right: 10px solid blue;
+    border-right: 10px solid #e5bd5b;
 }
 
 #choiceB {
     position: fixed;
     left: 28em;
     top: 21em;
-    border-left: 10px solid red;
+    border-left: 10px solid #e5bd5b;
 }
 
 #x {
@@ -94,6 +94,7 @@
     right: 16em;
     top: 9em;
     border-radius: 20%;
+    background-color: #ff5a00;
 }
 
 #bnt2 {
@@ -101,6 +102,7 @@
     right: 16em;
     top: 21em;
     border-radius: 20%;
+    background-color: #ff5a00;
 }
 
 #bnt3 {
@@ -108,12 +110,14 @@
     right: 16em;
     top: 33em;
     border-radius: 20%;
+    background-color: #ff5a00;
 }
 
 #bnt4 {
     position: fixed;
     right: 7em;
     top: 25em;
+    background-color: #ff5a00;
 }
 
 
